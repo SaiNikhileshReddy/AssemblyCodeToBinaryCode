@@ -43,6 +43,13 @@ public class Database {
         symbolTable.put("R12",12); symbolTable.put("R13",13); symbolTable.put("R14",14);
         symbolTable.put("R15",15); symbolTable.put("SCREEN",16384); symbolTable.put("KBD",24576);
 
+        symbolTable.put("0",0); symbolTable.put("1",1); symbolTable.put("2",2);
+        symbolTable.put("3",3); symbolTable.put("4",4); symbolTable.put("5",5);
+        symbolTable.put("6",6); symbolTable.put("7",7); symbolTable.put("8",8);
+        symbolTable.put("9",9); symbolTable.put("10",10); symbolTable.put("11",11);
+        symbolTable.put("12",12); symbolTable.put("13",13); symbolTable.put("14",14);
+        symbolTable.put("15",15);
+
         // SYMBOLTABLE --- SPECIAL KEYS
         symbolTable.put("SP",0); symbolTable.put("LCL",1); symbolTable.put("ARG",2);
         symbolTable.put("THIS",3); symbolTable.put("THAT",4);
