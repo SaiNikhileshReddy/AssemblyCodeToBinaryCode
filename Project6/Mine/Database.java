@@ -53,6 +53,8 @@ public class Database {
         // SYMBOLTABLE --- SPECIAL KEYS
         symbolTable.put("SP",0); symbolTable.put("LCL",1); symbolTable.put("ARG",2);
         symbolTable.put("THIS",3); symbolTable.put("THAT",4);
+
+        symbolTable.replace("count",15);
     }
 
     public static String getDestValue(String key){
@@ -83,7 +85,15 @@ public class Database {
         return null;
     }
 
-    public static boolean checkSymbolkey(String key){
+    public static boolean checkSymbolKey(String key){
         return (symbolTable.containsKey(key));
+    }
+
+    public static void setSymbolKey(String key, int value){
+        symbolTable.put(key,value);
+    }
+
+    public static void replaceSymbolValue(String key,int value){
+        symbolTable.replace(key,value);
     }
 }

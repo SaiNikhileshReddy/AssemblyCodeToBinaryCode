@@ -7,9 +7,8 @@ public class C_Line {
     private static Database database = new Database();
     private static Scanner scan = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        System.out.print("Enter C_Line = ");
-        String cLine = scan.nextLine();
+    public static String mainKey(String sentence){
+        String cLine = sentence;
 
         int pDest = 0;
         String sDest = null;
@@ -38,13 +37,15 @@ public class C_Line {
             }
 
             // dest KEYWORD
-             if (cLine.charAt(i) == '='){
-                 pDest = i;
-                 sDest = cLine.substring(0,(i)).trim();
+             if (cLine.charAt(i) == '=' && pDest ==0){
+                 if (i<commentVariablePositon || commentVariablePositon==0){
+                     pDest = i;
+                     sDest = cLine.substring(0,(i)).trim();
+                 }
              }
 
              // comp KEYWORD
-            if (cLine.charAt(i) == ';'){
+            if (cLine.charAt(i) == ';' && pComp == 0){
                 pComp = i;
             }
             if (pDest !=0 && pComp ==0){
@@ -62,27 +63,38 @@ public class C_Line {
             }
         }
 
-        /*System.out.println("dest is :"+sDest+":");
-        System.out.println("comp is :"+sComp+":");
-        System.out.println("jump is :"+sJump+":");*/
-
         String value = null;
-
         value = (sDest == null) ? "" : sDest;
         destValue = database.getDestValue(value);
+        compValue = database.getCompValue(sComp);
+        value = (sJump == null) ? "" : sJump;
+        jumpValue = database.getJumpValue(value);
+
+//        System.out.println("Dest key = "+sDest+":"+destValue);
+//        System.out.println("Comp key = "+sComp+":"+compValue);
+//        System.out.println("Jump key = "+sJump+":"+jumpValue);
+
+        finalMachineCode = "111"+compValue+destValue+jumpValue;
+
+        /*System.out.println("dest is :"+sDest+":");
+        System.out.println("comp is :"+sComp+":");
+        System.out.println("jump is :"+sJump+":");
+
+
         System.out.println("\n\ndest Key :"+sDest+":");
         System.out.println("dest Value :"+destValue+":");
 
-        compValue = database.getCompValue(sComp);
+
         System.out.println("comp Key :"+sComp+":");
         System.out.println("comp Value :"+compValue+":");
 
-        value = (sJump == null) ? "" : sJump;
-        jumpValue = database.getJumpValue(value);
+
         System.out.println("jump Key :"+sJump+":");
         System.out.println("jump Value :"+jumpValue+":");
 
-        finalMachineCode = "111"+compValue+destValue+jumpValue;
-        System.out.println("\nFinal code :"+finalMachineCode);
+
+        System.out.println("\nFinal code :"+finalMachineCode);*/
+
+        return finalMachineCode;
     }
 }
