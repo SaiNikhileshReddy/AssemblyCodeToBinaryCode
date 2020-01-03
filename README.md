@@ -10,10 +10,6 @@ it deals with building the first rung up the software hierarchy, which will even
 ### OBJECTIVE:-
 Write an Assembler program that translates programs written in the symbolic Hack assembly language into binary code that can execute on the Hack hardware platform
 
-
-### USAGE:-
-Depending on the programming language that you use, the assembler should be invoked using something like "Assembler fileName.asm", where the string fileName.asm is the assembler's input, i.e. the name of a text file containing Hack assembly commands. The assembler creates an output text file named fileName.hack. Each line in the output file consists of sixteen 0 and 1 characters. The output file is stored in the same directory of the input file. The name of the input file may contain a file path. (or we can run this in interactive mode by using “java UserInterface”)
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -24,7 +20,13 @@ Java JDK (oracle JDK) should be installed in your system to compile and the file
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+### Usage
+Depending on the programming language that you use, the assembler should be invoked using something like "Assembler fileName.asm", where the string fileName.asm is the assembler's input, i.e. the name of a text file containing Hack assembly commands. The assembler creates an output text file named fileName.hack. Each line in the output file consists of sixteen 0 and 1 characters. The output file is stored in the same directory of the input file. The name of the input file may contain a file path. (or we can run this in interactive mode by using “java UserInterface”)
+
+### Output of the tests (Emulator)
+
+
+
 
 
 ## Built With
