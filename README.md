@@ -25,9 +25,15 @@ Depending on the programming language that you use, the assembler should be invo
 
 ### Output of the tests (Emulator)
 
+#### Using direct usage of "java Assembler Rect.asm" :
+<img src = "Images/CMD-Output.jpg" width = "1000">
 
 
+#### Using direct usage of "java UserInterface" :
+<img src = "Images/UserInterface-Output.jpg" width = "1000">
 
+### Verification
+<img src = "Images/Emulator.jpg" width = "1000">
 
 ## Built With
 
