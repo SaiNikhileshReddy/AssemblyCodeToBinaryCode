@@ -32,7 +32,7 @@ Depending on the programming language that you use, the assembler should be invo
 #### Using direct usage of "java UserInterface" :
 <img src = "Images/UserInterface-Output.jpg" width = "1000">
 
-### Verification
+### Verification using Emulator(Nand2Tetris-Tools)
 <img src = "Images/Emulator.jpg" width = "1000">
 
 ## Built With
@@ -41,6 +41,7 @@ Depending on the programming language that you use, the assembler should be invo
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Shimon Schocken and Noam Nisan from
+```
+nand2tetris.org/course (Project 6: Assembler)
+```
