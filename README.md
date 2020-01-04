@@ -42,5 +42,5 @@ Depending on the programming language that you use, the assembler should be invo
 
 Shimon Schocken and Noam Nisan from
 ```
-nand2tetris.org/course (Project 6: Assembler)
+Nand2Tetris - Project 6: Assembler (https://www.nand2tetris.org/course)
 ```
