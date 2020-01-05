@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Prerequisites
 
-Java JDK (oracle JDK) should be installed in your system to compile and the files.
+Java JDK (Oracle JDK) should be installed in your system to compile and the files.
 
 ## Running the tests
 
