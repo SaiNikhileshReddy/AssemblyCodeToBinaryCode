@@ -48,3 +48,9 @@ Shimon Schocken and Noam Nisan from
 ```
 Nand2Tetris - Project 6: Assembler (https://www.nand2tetris.org/course)
 ```
+## Achieved Goals
+
+* All test cases provided by Nand2Tetris is working
+* Hash Maps
+* File Handling in depth
+* Minor improvements 
